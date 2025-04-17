@@ -27,5 +27,6 @@ jobs:
         with:
           name: "${{ inputs.artifactName }}"
           version: "${{ inputs.artifactVersion }}"
-          url: "docker.io/MyApp/${{ inputs.artifactName }}:${{ inputs.artifactVersion }}"
+          url: "${{ inputs.url }}"
+          digest: "${{ inputs.digest }}"
           target-environment: "${{ inputs.environment }}"
